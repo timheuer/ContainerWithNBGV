@@ -7,9 +7,9 @@
 		<InvariantGlobalization>true</InvariantGlobalization>
 	</PropertyGroup>
 	
-	<Target Name="SetContainerTagTarget" BeforeTargets="CoreCompile">
+	<Target Name="SetContainerTagTarget" BeforeTargets="ComputeContainerConfig">
 		<PropertyGroup>
-			<ContainerImageTag>$(GitCommitId)</ContainerImageTag>
+			<ContainerImageTags>latest;$(GitCommitId);$(Version)</ContainerImageTags>
 		</PropertyGroup>
 	</Target>
 
