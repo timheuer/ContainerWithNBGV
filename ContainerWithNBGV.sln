@@ -5,6 +5,11 @@ VisualStudioVersion = 17.10.34614.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerWithNBGV", "ContainerWithNBGV.csproj", "{D9A08EBE-B3D3-4460-BDFE-55FF09183956}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Workflows", "Workflows", "{05A8FEEF-DAEB-4A4B-9DA4-920D506009CF}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build-ad4e7.yaml = .github\workflows\build-ad4e7.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
