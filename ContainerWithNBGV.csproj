@@ -5,8 +5,13 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<InvariantGlobalization>true</InvariantGlobalization>
-		<ContainerImageTag>$(GitBuildVersion)</ContainerImageTag>
 	</PropertyGroup>
+	
+	<Target Name="SetContainerTagTarget" BeforeTargets="CoreCompile">
+		<PropertyGroup>
+			<ContainerImageTag>$(GitCommitId)</ContainerImageTag>
+		</PropertyGroup>
+	</Target>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.1" />

@@ -54,4 +54,4 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Publish
-      run: dotnet publish -t:PublishContainer /p:ContainerImageTag=${{ steps.nbgv_version.outputs.GitCommitId }}
+      run: dotnet publish -t:PublishContainer
